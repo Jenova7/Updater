@@ -1,7 +1,8 @@
 {
   "updates": {
     "windows": {
-      "open-url": "",",
+      "open-url": "",
+      "latest-version": "",
       "download-url": "",
       "changelog": "",
       "mandatory": false
