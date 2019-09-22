@@ -13,7 +13,8 @@ SOURCES += \
 
 DISTFILES += \
     QSimpleUpdater/QSimpleUpdater.pri \
-    QSimpleUpdater/etc/resources/update.png
+    QSimpleUpdater/etc/resources/update.png \
+    update.png
 
 RESOURCES += \
     QSimpleUpdater/etc/resources/qsimpleupdater.qrc
@@ -30,5 +31,3 @@ HEADERS += \
     testwindow.h
 
 include(QSimpleUpdater/QSimpleUpdater.pri)
-
-

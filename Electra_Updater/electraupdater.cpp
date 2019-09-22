@@ -10,25 +10,26 @@ static const QString DEFS_URL = "https://raw.githubusercontent.com/"
 
 ElectraUpdater::ElectraUpdater(QWidget *parent) : QWidget(parent)
 {
-    ui = new Ui::ElectraUpdater;
-    ui->setupUi(this);
-    setWindowTitle(qApp->applicationName());
+    m_updateUi = new Ui::ElectraUpdater;
+    m_updateUi->setupUi(this);
+
+    setWindowTitle("Electra updater");
+    setWindowIcon(QIcon(QCoreApplication::applicationDirPath() + "/update.png"));
+    /* React to button clicks */
+    connect(m_updateUi->m_updateYes, SIGNAL(clicked()), this, SLOT(close()));//TODO
+    connect(m_updateUi->m_updateNo, SIGNAL(clicked()), this, SLOT(close()));
 }
 
 
 ElectraUpdater::~ElectraUpdater()
 {
-    delete ui;
+    delete m_updateUi;
 }
 
-void ElectraUpdater::on_m_updateNo_clicked()
-{
-    //close the updater and continue the normal process:
-    this->close();
+void ElectraUpdater::checkForUpdates(){
+
 }
 
-void ElectraUpdater::on_m_updateYes_clicked()
-{
-    this->close();
-    //start the download:
+void ElectraUpdater::updateChangelog (const QString& url){
+
 }

@@ -6,6 +6,7 @@
 #include <QDebug>
 #include <QPushButton>
 #include <QSimpleUpdater.h>
+#include <QIcon>
 
 namespace Ui {
 class ElectraUpdater;
@@ -19,17 +20,14 @@ class ElectraUpdater : public QWidget
 
 public:
     explicit ElectraUpdater(QWidget *parent = nullptr);
-    void checkForUpdates();
-    void updateChangelog (const QString& url);
     ~ElectraUpdater();
 
 private slots:
-    void on_m_updateYes_clicked();
-    void on_m_updateNo_clicked();
-
+    void checkForUpdates();
+    void updateChangelog (const QString& url);
 
 private:
-    Ui::ElectraUpdater *ui;
+    Ui::ElectraUpdater *m_updateUi;
     QSimpleUpdater *m_updater;
     QPushButton *m_updateYes;
     QPushButton *m_updateNo;

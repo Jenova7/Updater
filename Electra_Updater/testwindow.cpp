@@ -3,7 +3,8 @@
 
 TestWindow::TestWindow() : QWidget()
 {
-    setFixedSize(300,200);
+    setFixedSize(600,480);
+    setWindowTitle("test");
     m_testButon = new QPushButton("check for update", this);
     m_testButon->setCursor(Qt::PointingHandCursor);
 
@@ -13,11 +14,7 @@ TestWindow::TestWindow() : QWidget()
 
 void TestWindow::UpdateWindow(){
 
-    /*
-    ElectraUpdater ecaUpdater;
-    ecaUpdater.show();
-    this->close();*/
-    auto ecaUpdater = new ElectraUpdater;
+    ElectraUpdater *ecaUpdater = new ElectraUpdater;
     ecaUpdater->show();
     this->close();
 }
