@@ -16,6 +16,5 @@ void TestWindow::UpdateWindow(){
 
     ElectraUpdater *ecaUpdater = new ElectraUpdater;
     ecaUpdater->show();
-    this->close();
 }
 

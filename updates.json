@@ -1,21 +1,21 @@
 {
   "updates": {
     "windows": {
-      "open-url": "",
+      "open-url": "https://github.com/Electra-project/electra-core/releases/download/2.1.0/Win64-Electra-QT-2.1.0-setup.exe",
       "latest-version": "2.1.1",
       "download-url": "https://github.com/Electra-project/electra-core/releases/download/2.1.0/Win64-Electra-QT-2.1.0-setup.exe",
       "changelog": "https://github.com/Electra-project/electra-core/releases/tag/2.1.0",
       "mandatory": true
     },
     "osx": {
-      "open-url": "",
+      "open-url": "https://github.com/Electra-project/electra-core/releases/download/2.1.0/Mac-Electra-QT-2.1.0.dmg",
       "latest-version": "2.1.1",
       "download-url": "https://github.com/Electra-project/electra-core/releases/download/2.1.0/Mac-Electra-QT-2.1.0.dmg",
       "changelog": "https://github.com/Electra-project/electra-core/releases/tag/2.1.0",
       "mandatory": true
     },
     "linux": {
-      "open-url": "",
+      "open-url": "https://github.com/Electra-project/electra-core/releases/download/2.1.0/Linux-Electra-QT-2.1.0.zip",
       "latest-version": "2.1.1",
       "download-url": "https://github.com/Electra-project/electra-core/releases/download/2.1.0/Linux-Electra-QT-2.1.0.zip",
       "changelog": "https://github.com/Electra-project/electra-core/releases/tag/2.1.0",
